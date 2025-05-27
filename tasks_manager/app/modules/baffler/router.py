@@ -56,7 +56,3 @@ async def create_table(table: Task, uow: UOWBaffler) -> Task:
 async def delete_table(id: int, uow: UOWBaffler) -> JSONResponse:
     await BufflerService().delete_task(uow, id)
     return JSONResponse("Задача успешно удалена!", status_code=status.HTTP_200_OK)
-
-@router.patch("/tasks/{id}")
-
-
