@@ -71,28 +71,13 @@ class DatabaseRepository(Generic[Model]):
         object_ = (await self.session.scalars(query)).one_or_none()
         return object_
 
-    async def get_by_username_or_none(
-        self,
-        username: str,
-    ) -> Optional[Model]:
-        query = select(self.model).where(self.model.username == username)
-        object_ = (await self.session.scalars(query)).one_or_none()
-        return object_
 
-    async def get_by_name_or_none(
-        self,
-        name: str,
-    ) -> Optional[Model]:
-        query = select(self.model).where(self.model.name == name)
-        object_ = (await self.session.scalars(query)).one_or_none()
-        return object_
-
-    async def get_by_name_or_create(self, name: str, values: dict) -> Model:
+    async def get_by_title_or_create(self, title: str, values: dict) -> Model:
         instance = self.model(**values)
-        objects = await self.filter(self.model.name == name)
+        objects = await self.filter(self.model.title == title)
         if not objects:
             self.session.add(instance)
-            objects = await self.filter(self.model.name == name)
+            objects = await self.filter(self.model.title == title)
         else:
             logger.exception("Объект уже существует...Пропуск")
             raise ValueError()

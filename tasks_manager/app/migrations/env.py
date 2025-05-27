@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 from database import Base
-from modules.reservation import models as reservation_models
+from modules.baffler import models as baffler_models
 from settings import settings
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -1,5 +1,5 @@
-from modules.reservation.router import router as reservation_router
+from modules.baffler.router import router as baffler_router
 
 routers = [
-    reservation_router,
+    baffler_router,
 ]

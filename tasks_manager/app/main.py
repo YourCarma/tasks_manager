@@ -19,10 +19,11 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Сервис бронирования столиков в ресторане",
+app = FastAPI(title="Сервис управления задачами",
               description="""
-# Тестовое задание для Хайталент""",
-              lifespan=lifespan)
+# Тестовое задание по созданию задач""",
+              lifespan=lifespan
+              )
 
 origins = ["*"]
 app.add_middleware(CORSMiddleware,
@@ -61,4 +62,5 @@ if __name__ == '__main__':
     uvicorn.run('main:app',
                 host=settings.HOST,
                 port=settings.PORT,
-                reload=True)
+                reload=True
+               )
