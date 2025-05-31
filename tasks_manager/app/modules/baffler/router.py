@@ -46,7 +46,7 @@ async def create_table(table: Task, uow: UOWBaffler) -> Task:
                tags=["Задачи"],
                summary="Удаление задачи по id",
                 description="""
-## Удаление стола.
+## Удаление задачи.
 ### Входные данные:
 *  **id** `int` - id удаляемой задачи
 ### Выходные данные:

@@ -11,7 +11,7 @@ from database.base import Base
 class Tasks(Base):
     __tablename__ = "tasks"
     id = mapped_column(Integer, primary_key= True, autoincrement=True)
-    title = mapped_column(String(30), nullable=False)
+    title = mapped_column(String(255), nullable=False)
     completed = mapped_column(Boolean, nullable=False, default=False)
 
 
