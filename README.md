@@ -128,7 +128,7 @@ python main.py
 
 Выполняем миграции БД:
 
-`docker-compose exec reservation-service alembic upgrade head`
+`docker-compose exec task-manager-service alembic upgrade head`
 
 1. Заходим в [portainer](http://localhost:9000 "ссылка на portainer")
 2. Создаем пользователя
@@ -136,4 +136,4 @@ python main.py
 4. Наблюдаем наши сервисы
 5. **Готово!**
 
-   ![1744894111115](hightalent_reservation/image/README/1744894111115.png)
+   ![1748688005365](image/README/1748688005365.png)![1744894111115](hightalent_reservation/image/README/1744894111115.png)

@@ -136,6 +136,7 @@ export default {
     async create_task() {
       try {
         this.isSending = true;
+        console.info(`http://${process.env.VUE_APP_MANAGER_SERVICE_HOST}:${process.env.VUE_APP_MANAGER_SERVICE_PORT}/api/tasks`)
         const response = await axios.post(
           `http://${process.env.VUE_APP_MANAGER_SERVICE_HOST}:${process.env.VUE_APP_MANAGER_SERVICE_PORT}/api/tasks`,
           {
