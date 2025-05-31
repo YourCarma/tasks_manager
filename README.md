@@ -136,4 +136,4 @@ python main.py
 4. Наблюдаем наши сервисы
 5. **Готово!**
 
-   ![1748688005365](image/README/1748688005365.png)![1744894111115](hightalent_reservation/image/README/1744894111115.png)
+   ![1748688005365](image/README/1748688005365.png)
