@@ -13,7 +13,7 @@
 ```
 . # Предполагается, что у нас развернута целая система c разлчиными микросервисами
 ├── environments          # Переменные окружения сервисов/
-│   └── hightalent_reservation/
+│   └── tasks_manager/
 │       └── .env.production
 ├── task_manager/ # Сервис для управления задачами
 │   ├── app/
@@ -55,7 +55,7 @@
 Клонирование сериса:
 
 ```
-git clone https://github.com/YourCarma/task_manager.git
+git clone https://github.com/YourCarma/tasks_manager.git
 ```
 
 ### Запуск сервиса вручную
@@ -64,7 +64,7 @@ git clone https://github.com/YourCarma/task_manager.git
 
 Переходим в папку проекта:
 
-`cd hightalent_reservation`
+`cd tasks_manager`
 
 Проверьте **переменные окружения** в `.env.production`!
 
@@ -117,7 +117,7 @@ python main.py
 
 `docker-compose.yaml` состоит из четырех контейнеров:
 
-1. `task-manager-service` - сам сервис бронирования столиков
+1. `task-manager-service` - сам сервис управления задачами
 2. `postgres` - СУБД PostgreSQL
 3. `portainer` - Portainer для графического взаимодействия
 4. `frontend` - клиентская часть приложения
