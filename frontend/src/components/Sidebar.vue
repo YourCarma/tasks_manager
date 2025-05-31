@@ -6,8 +6,8 @@
       <div class="flex justify-center items-center w-full px-3 mt-4">
         <img class="w-12 h-12" src="@/img/logo.png" />
         <div class="flex flex-col justify-start mt-4 ml-2 text-[black]">
-          <p class="text-5xl leading-[0.5] font-stengazeta">Сказочник</p>
-          <p class="text-[15px] font-stengazeta">решатель проблем</p>
+          <p class="text-5xl leading-[0.5] font-stengazeta">Тестовик</p>
+          <p class="text-[15px] font-stengazeta">постановщик задач</p>
         </div>
       </div>
       <div class="w-full px-2">
